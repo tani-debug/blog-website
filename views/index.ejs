@@ -1,0 +1,33 @@
+<%- include("partials/Header.ejs")  %>
+
+<!-- Display Posts -->
+ <h2 class="all-post">All Posts</h2>
+ <div class="created-posts">
+      
+    <% if (posts.length === 0) { %>
+        <p>No posts yet.</p>
+    <% } else if (posts.length > 3) {%>
+      
+
+
+      <% }else { %>
+        <% posts.forEach(post => { %>
+            <div class="post">
+                <h3 class="post-title"><%= post.title %></h3>
+                <p class="Author-post"><strong>by <%= post.Author %></strong></p>
+                <% if (post.img_url) { %>
+                    <div class="post-image">
+                        <img src="<%= post.img_url %>" alt="Post Image" style="max-width: 300px; border-radius: 8px;">
+                    </div>
+                <% } %>
+                <p class="post-content"><%= post.content %></p>
+            </div>
+        <% }) %>
+    <% } %>
+
+ </div>
+
+<%- include("partials/footer.ejs") %>
+
+
+   

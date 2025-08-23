@@ -1,0 +1,27 @@
+<%- include("partials/Header.ejs")  %>
+
+
+<!-- Form to create new post -->
+
+   <form action="/submit" method="POST" class="form-container">
+    <div class="title">
+      <label for="title" id="title">Title:</label>
+      <input type="text" id="title" name="title" required>
+    </div>
+    <div>
+      <label for="Author" class="Author">Author:</label>
+      <input type="text" id="Author">
+    </div>
+    <div class="content">
+      <label for="content" id="content">Content:</label>
+      <textarea name="content" class="text-content" rows="5" required placeholder="Write your content here:"></textarea>
+    </div>
+    <div>
+      <label for="image" id="image">Image URL:</label>
+      <input type="url" id="image" name="image" />
+    </div>
+    <input type="submit" value="Create Post" class="submit-button">
+   </form>
+
+
+<%- include("partials/footer.ejs") %>

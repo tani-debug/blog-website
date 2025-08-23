@@ -1,0 +1,194 @@
+/* Make full page height */
+/* * {
+  display: flex;
+} */
+
+body {
+  background-image: url(https://wallpaperswide.com/download/violet_blurry_background-wallpaper-1680x1050.jpg);
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.gradient-bg {
+  background: linear-gradient(45deg, black, transparent);  
+  backdrop-filter: blur(5px);
+    display: block;
+}
+
+.explanation{
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  
+}
+
+.nav-link:hover {
+  
+  color: #4400ff !important;       /* Change text color on hover */
+  text-decoration: underline;           /* Remove underline if needed */
+  transition: all 0.3s ease;       /* Smooth transition */
+}
+
+
+
+#reg-form{
+    display: block;
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  }
+
+.blog-img{
+    border-radius: 10px;
+}
+
+.mid-para-li{
+  list-style-type: none;
+}
+
+.discover{
+  font-size: larger;
+}
+
+.down-line{
+  font-size: larger;
+}
+
+
+.form-container {
+  background: linear-gradient(45deg, black, transparent, black);      /* Light gray background */
+  padding: 20px;                   /* Space inside */
+  border-radius: 10px;             /* Rounded corners */
+  width: 100%;
+  max-width: 900px;                /* Max width for readability */
+  margin: 20px auto;               /* Center horizontally */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #f0f0f0;
+}
+
+.submit-button:hover {
+  color:#f0f0f0;
+  background-color: green;
+  
+}
+
+.submit-button {
+  border-radius: 5px;
+  height: 30px;
+  width: 100px;
+  align-self: center;
+}
+
+label {
+  font-size: larger;
+  font-weight: bolder;
+}
+
+input {
+  border-radius: 5px;
+  margin-left: 20px;
+  width: 100%;
+ 
+}
+
+textarea {
+  border-radius: 5px;
+  margin-left: 20px;
+  align-self: center;
+  width: 100%;
+}
+
+.text-content {
+  font-family: "Playwrite IN", cursive;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.post {
+  background: linear-gradient(black, transparent, rgb(36, 36, 36));
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.created-posts {
+  display: flex;
+  gap: 50px;
+  margin: 50px;
+  color: white;
+  
+
+}
+
+
+.all-post {
+    color: white;
+    text-align: center;
+    font-family: 'FontAwesome';
+    font-size: calc(1.325rem + .9vw);
+    background: linear-gradient(45deg, black, transparent, );
+    margin-top: 10px;
+}
+
+#nav-icon {
+  color: #f0f0f0;
+  font-size: larger;
+  font-weight: 500;
+}
+
+#nav-icon:hover {
+  color: black;
+}
+
+.nav-item:hover {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  color: black;
+}
+
+a{
+  text-decoration: none;
+}
+
+.post-title {
+  font-weight: bolder;
+  font-family: "Tagesschrift", system-ui;
+  font-weight: 300;
+  font-style: normal;
+  transition: all 0.3s ease;
+
+}
+
+.post-title:hover {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  color: black;
+  
+}
+
+@media (min-width:481px) and (max-width:1200px) {
+  .created-posts {
+    display: block;
+    flex-direction: row;
+    align-content: center;
+    gap: 20px;
+    }
+  }
+
+
