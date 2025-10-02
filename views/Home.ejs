@@ -1,40 +1,63 @@
-<%- include("partials/Header.ejs")  %>
+<%- include("partials/Header.ejs") %>
 
+<!-- Hero Section -->
+<section class="container my-5">
+  <div class="row align-items-center">
+    <div class="col-md-7">
+      <h1 class="display-4 fw-bold">Welcome to MyBlog</h1>
+      <p class="lead">Discover articles on Tech, Travel, Lifestyle, and more. Join our community and share your stories!</p>
+      <a href="/post" class="btn btn-primary btn-lg mt-3">Create Your First Post</a>
+      <a href="/newsletter" class="btn btn-outline-secondary btn-lg mt-3 ms-2">Subscribe to Newsletter</a>
+    </div>
+    <div class="col-md-5 text-center">
+      <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=500&q=80" alt="Blogging" class="img-fluid rounded shadow">
+    </div>
+  </div>
+</section>
 
-    <!-- NavBar for different page navigations -->
-  <nav class="navbar navbar-expand-lg gradient-bg" id="navbar">
-    <div class="container-fluid" > 
-      <a class="navbar-brand" href="#">Home</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Ebooks</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Amazon</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Meesho</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Crafts</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Fitness</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Talk</a>
-          </li> 
-        </ul>
-        <form class="Register">
-          <button class="btn btn-outline-success" type="submit">Register</button>
-        </form>
+<!-- Featured Categories -->
+<section class="container my-5">
+  <h2 class="mb-4 text-center">Explore Categories</h2>
+  <div class="row justify-content-center">
+    <div class="col-md-3 mb-3">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body text-center">
+          <i class="fa-solid fa-laptop-code fa-2x mb-2"></i>
+          <h5 class="card-title">Tech</h5>
+          <p class="card-text">Latest trends, tutorials, and reviews.</p>
+          <a href="#" class="btn btn-outline-primary btn-sm">View Tech</a>
+        </div>
       </div>
-    </div>  
-  </nav>
+    </div>
+    <div class="col-md-3 mb-3">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body text-center">
+          <i class="fa-solid fa-plane fa-2x mb-2"></i>
+          <h5 class="card-title">Travel</h5>
+          <p class="card-text">Guides, tips, and travel stories.</p>
+          <a href="#" class="btn btn-outline-primary btn-sm">View Travel</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body text-center">
+          <i class="fa-solid fa-heart fa-2x mb-2"></i>
+          <h5 class="card-title">Lifestyle</h5>
+          <p class="card-text">Wellness, crafts, and daily inspiration.</p>
+          <a href="#" class="btn btn-outline-primary btn-sm">View Lifestyle</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter Call-to-Action -->
+<section class="container my-5 text-center">
+  <h3>Stay Updated!</h3>
+  <p>Subscribe to our newsletter for the latest posts and updates.</p>
+  <a href="/newsletter" class="btn btn-success">Subscribe Now</a>
+</section>
 
 <%- include("partials/footer.ejs") %>
 

@@ -4,6 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,5 +15,13 @@
     "body-parser": "^2.2.0",
     "ejs": "^3.1.10",
     "express": "^5.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tani-debug/blog-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tani-debug/blog-website/issues"
+  },
+  "homepage": "https://github.com/tani-debug/blog-website#readme"
 }
