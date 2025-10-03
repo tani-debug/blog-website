@@ -12,12 +12,17 @@ const posts = []; // Store blog posts in memory
 
 // Home page
 app.get("/", (req, res) => {
-    res.render("index", { posts });
+    res.render("Home");   //
 });
 
 // Create post page
 app.get("/post", (req, res) => {
     res.render("post");
+});
+
+//Latest post
+app.get("/latestpost", (req, res)=> {
+    res.render("index", { posts });
 });
 
 // Handle post submission
@@ -43,24 +48,29 @@ app.get("/post/:id", (req, res) => {
     res.render("Blog.ejs", { post });
 });
 
-// Home page (optional: improved home.ejs)
+// Home page 
 app.get("/home", (req, res) => {
     res.render("Home");
 });
 
-// Newsletter page (optional)
+// Newsletter page
 app.get("/newsletter", (req, res) => {
     res.render("newsletter");
 });
 
-// About page (optional)
+// About page
 app.get("/about", (req, res) => {
     res.render("about");
 });
 
-// Resources page (optional)
+// Resources page
 app.get("/resources", (req, res) => {
     res.render("resources");
+});
+
+//contact
+app.get("/contact", (req, res) => {
+    res.render("contact");
 });
 
 // Start server

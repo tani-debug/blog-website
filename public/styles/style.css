@@ -137,6 +137,12 @@ input:focus, textarea:focus {
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(108,99,255,0.08);
   color: #232946;
+  transition: box-shadow 0.3s, transform 0.3s, border-color 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 24px rgba(108,99,255,0.18);
+  transform: translateY(-6px) scale(1.03); /* Move up and slightly scale on hover */
 }
 
 .card-title {
@@ -186,7 +192,7 @@ input:focus, textarea:focus {
   margin-top: auto;
   text-align: center;
   background: linear-gradient(90deg, #fff5e6, #e0e7ff);
-  color: c;
+  color: #232946;
   padding: 24px 0 0 0;
 }
 
